@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		EF399BD1218343B100983D4D /* NXDataStructures.h in Headers */ = {isa = PBXBuildFile; fileRef = EF399BCF218343B100983D4D /* NXDataStructures.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EF399BDB218343E700983D4D /* NXStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF399BDA218343E700983D4D /* NXStack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EF399BCC218343B100983D4D /* NXDataStructures.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NXDataStructures.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF399BCF218343B100983D4D /* NXDataStructures.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NXDataStructures.h; sourceTree = "<group>"; };
 		EF399BD0218343B100983D4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF399BDA218343E700983D4D /* NXStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NXStack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,10 +48,35 @@
 		EF399BCE218343B100983D4D /* NXDataStructures */ = {
 			isa = PBXGroup;
 			children = (
+				EF399BD8218343C200983D4D /* Data Structures */,
+				EF399BD7218343BB00983D4D /* SupportingFiles */,
+			);
+			path = NXDataStructures;
+			sourceTree = "<group>";
+		};
+		EF399BD7218343BB00983D4D /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
 				EF399BCF218343B100983D4D /* NXDataStructures.h */,
 				EF399BD0218343B100983D4D /* Info.plist */,
 			);
-			path = NXDataStructures;
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		EF399BD8218343C200983D4D /* Data Structures */ = {
+			isa = PBXGroup;
+			children = (
+				EF399BD9218343CC00983D4D /* Stack */,
+			);
+			path = "Data Structures";
+			sourceTree = "<group>";
+		};
+		EF399BD9218343CC00983D4D /* Stack */ = {
+			isa = PBXGroup;
+			children = (
+				EF399BDA218343E700983D4D /* NXStack.swift */,
+			);
+			path = Stack;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,6 +122,7 @@
 				TargetAttributes = {
 					EF399BCB218343B100983D4D = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
 					};
 				};
 			};
@@ -130,6 +158,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF399BDB218343E700983D4D /* NXStack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,7 +217,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -246,7 +275,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -261,6 +290,7 @@
 		EF399BD5218343B100983D4D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -268,8 +298,9 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = NXDataStructures/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/NXDataStructures/SupportingFiles/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -278,6 +309,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = www.tinokrzelj.com.NXDataStructures;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -286,6 +318,7 @@
 		EF399BD6218343B100983D4D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -293,8 +326,9 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = NXDataStructures/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/NXDataStructures/SupportingFiles/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
