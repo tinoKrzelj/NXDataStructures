@@ -7,15 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF0B4AD62217162F009A57D7 /* NXLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0B4AD52217162F009A57D7 /* NXLinkedList.swift */; };
 		EF399BD1218343B100983D4D /* NXDataStructures.h in Headers */ = {isa = PBXBuildFile; fileRef = EF399BCF218343B100983D4D /* NXDataStructures.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EF399BDB218343E700983D4D /* NXStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF399BDA218343E700983D4D /* NXStack.swift */; };
+		EFE8463D221B0D2500027A7A /* NXDataStructures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF399BCC218343B100983D4D /* NXDataStructures.framework */; };
+		EFE84647221B0D6B00027A7A /* NXStack+Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE84646221B0D6B00027A7A /* NXStack+Test.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		EFE8463E221B0D2500027A7A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF399BC3218343B100983D4D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF399BCB218343B100983D4D;
+			remoteInfo = NXDataStructures;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		EF0B4AD52217162F009A57D7 /* NXLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NXLinkedList.swift; sourceTree = "<group>"; };
 		EF399BCC218343B100983D4D /* NXDataStructures.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NXDataStructures.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF399BCF218343B100983D4D /* NXDataStructures.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NXDataStructures.h; sourceTree = "<group>"; };
 		EF399BD0218343B100983D4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF399BDA218343E700983D4D /* NXStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NXStack.swift; sourceTree = "<group>"; };
+		EFE84638221B0D2400027A7A /* NXDataStructuresTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NXDataStructuresTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFE8463C221B0D2500027A7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFE84645221B0D6B00027A7A /* NXDataStructuresTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NXDataStructuresTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		EFE84646221B0D6B00027A7A /* NXStack+Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NXStack+Test.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,13 +44,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EFE84635221B0D2400027A7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFE8463D221B0D2500027A7A /* NXDataStructures.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EF0B4AD42217160E009A57D7 /* LinkedList */ = {
+			isa = PBXGroup;
+			children = (
+				EF0B4AD52217162F009A57D7 /* NXLinkedList.swift */,
+			);
+			path = LinkedList;
+			sourceTree = "<group>";
+		};
 		EF399BC2218343B100983D4D = {
 			isa = PBXGroup;
 			children = (
 				EF399BCE218343B100983D4D /* NXDataStructures */,
+				EFE84639221B0D2400027A7A /* NXDataStructuresTests */,
 				EF399BCD218343B100983D4D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				EF399BCC218343B100983D4D /* NXDataStructures.framework */,
+				EFE84638221B0D2400027A7A /* NXDataStructuresTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				EF399BD9218343CC00983D4D /* Stack */,
+				EF0B4AD42217160E009A57D7 /* LinkedList */,
 			);
 			path = "Data Structures";
 			sourceTree = "<group>";
@@ -77,6 +114,40 @@
 				EF399BDA218343E700983D4D /* NXStack.swift */,
 			);
 			path = Stack;
+			sourceTree = "<group>";
+		};
+		EFE84639221B0D2400027A7A /* NXDataStructuresTests */ = {
+			isa = PBXGroup;
+			children = (
+				EFE84643221B0D3A00027A7A /* DataStructures */,
+				EFE84648221B0D7100027A7A /* Supporting Files */,
+				EFE8463C221B0D2500027A7A /* Info.plist */,
+			);
+			path = NXDataStructuresTests;
+			sourceTree = "<group>";
+		};
+		EFE84643221B0D3A00027A7A /* DataStructures */ = {
+			isa = PBXGroup;
+			children = (
+				EFE84644221B0D4A00027A7A /* Stack */,
+			);
+			path = DataStructures;
+			sourceTree = "<group>";
+		};
+		EFE84644221B0D4A00027A7A /* Stack */ = {
+			isa = PBXGroup;
+			children = (
+				EFE84646221B0D6B00027A7A /* NXStack+Test.swift */,
+			);
+			path = Stack;
+			sourceTree = "<group>";
+		};
+		EFE84648221B0D7100027A7A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EFE84645221B0D6B00027A7A /* NXDataStructuresTests-Bridging-Header.h */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -111,18 +182,41 @@
 			productReference = EF399BCC218343B100983D4D /* NXDataStructures.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		EFE84637221B0D2400027A7A /* NXDataStructuresTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFE84640221B0D2500027A7A /* Build configuration list for PBXNativeTarget "NXDataStructuresTests" */;
+			buildPhases = (
+				EFE84634221B0D2400027A7A /* Sources */,
+				EFE84635221B0D2400027A7A /* Frameworks */,
+				EFE84636221B0D2400027A7A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EFE8463F221B0D2500027A7A /* PBXTargetDependency */,
+			);
+			name = NXDataStructuresTests;
+			productName = NXDataStructuresTests;
+			productReference = EFE84638221B0D2400027A7A /* NXDataStructuresTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		EF399BC3218343B100983D4D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = "Tino Krželj";
 				TargetAttributes = {
 					EF399BCB218343B100983D4D = {
 						CreatedOnToolsVersion = 10.0;
 						LastSwiftMigration = 1000;
+					};
+					EFE84637221B0D2400027A7A = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -139,12 +233,20 @@
 			projectRoot = "";
 			targets = (
 				EF399BCB218343B100983D4D /* NXDataStructures */,
+				EFE84637221B0D2400027A7A /* NXDataStructuresTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		EF399BCA218343B100983D4D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFE84636221B0D2400027A7A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -158,11 +260,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF0B4AD62217162F009A57D7 /* NXLinkedList.swift in Sources */,
 				EF399BDB218343E700983D4D /* NXStack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EFE84634221B0D2400027A7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFE84647221B0D6B00027A7A /* NXStack+Test.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EFE8463F221B0D2500027A7A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF399BCB218343B100983D4D /* NXDataStructures */;
+			targetProxy = EFE8463E221B0D2500027A7A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		EF399BD2218343B100983D4D /* Debug */ = {
@@ -342,6 +461,47 @@
 			};
 			name = Release;
 		};
+		EFE84641221B0D2500027A7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2264UU8CR6;
+				INFOPLIST_FILE = NXDataStructuresTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "https---tinokrzelj.com.NXDataStructuresTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EFE84642221B0D2500027A7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2264UU8CR6;
+				INFOPLIST_FILE = NXDataStructuresTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "https---tinokrzelj.com.NXDataStructuresTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -359,6 +519,15 @@
 			buildConfigurations = (
 				EF399BD5218343B100983D4D /* Debug */,
 				EF399BD6218343B100983D4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EFE84640221B0D2500027A7A /* Build configuration list for PBXNativeTarget "NXDataStructuresTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFE84641221B0D2500027A7A /* Debug */,
+				EFE84642221B0D2500027A7A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

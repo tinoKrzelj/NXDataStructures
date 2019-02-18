@@ -84,19 +84,8 @@ public struct NXStack<T: Comparable> {
             print("Stack -> ", allocatedSpace)
         #endif
     }
+    
+    mutating func count() -> Int {
+        return allocatedSpace.count
+    }
 }
-
-//
-//  MARK: - Example
-//
-//
-//var customStack = Stack<String>()
-//customStack.push("Tino")
-//customStack.push("Ante")
-//customStack.push("Test")
-//customStack.push("Test 3")
-//customStack.push("Test 4", atIndex: 0)
-//customStack.move(elementAtIndex: 0, atIndex: 2)
-//print(customStack.contains("test 4"))
-//customStack.move(elementAtIndex: 0, atIndex: 2)
-//customStack.printStack()
