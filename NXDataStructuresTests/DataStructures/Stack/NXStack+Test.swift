@@ -45,7 +45,7 @@ final class NXStack_Test: XCTestCase {
         XCTAssertEqual(stack.pop(atIndex: 0), 4)
         stack.push(2)
         stack.push(3)
-        stack.popAll()
+        stack.clearStack()
         XCTAssertEqual(stack.count(), 0)
     }
     
@@ -66,10 +66,17 @@ final class NXStack_Test: XCTestCase {
         XCTAssertEqual(stack.peek(atIndex: 2), 2)
     }
     
+    func testIndexOfElementMethod() {
+        stack.push(4)
+        stack.push(2)
+        XCTAssertEqual(stack.indexOfElement(element: 2), 1)
+    }
+    
     func testContainsMethod() {
         stack.push(4)
         stack.push(5)
         XCTAssertEqual(stack.contains(3), false)
+        stack.printStack()
     }
     
 }

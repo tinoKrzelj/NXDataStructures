@@ -8,6 +8,17 @@
 
 import Foundation
 
-public struct NXLinkedList<T: Comparable> {
+struct NXLinkedList<T: Comparable> {
+    //
+    //  MARK: - Properties
+    //
+    
+    //
+    //  MARK: - Init methods
+    //
+    
+    //
+    //  MARK: - Helper methods
+    //
     
 }
