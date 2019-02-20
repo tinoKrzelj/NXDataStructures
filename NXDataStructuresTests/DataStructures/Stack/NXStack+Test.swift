@@ -29,20 +29,31 @@ final class NXStack_Test: XCTestCase {
         XCTAssertEqual(stack.count(), 2)
     }
     
-    func testPushMethods() {
+    func testPushMethod() {
         stack.push(4)
         stack.push(5)
         XCTAssertEqual(stack.count(), 2)
-        stack.push(1, atIndex: 0)
-        stack.push(2, atIndex: 1)
-        XCTAssertEqual(stack.count(), 4)
     }
     
-    func testPopMethods() {
+    func testPushAtIndexMethod() {
+        stack.push(1, atIndex: 0)
+        stack.push(2, atIndex: 1)
+        XCTAssertEqual(stack.count(), 2)
+    }
+    
+    func testPopMethod() {
         stack.push(4)
         stack.push(5)
         XCTAssertEqual(stack.pop(), 5)
+    }
+    
+    func testPopAtIndexMethod() {
+        stack.push(4)
+        stack.push(5)
         XCTAssertEqual(stack.pop(atIndex: 0), 4)
+    }
+    
+    func testClearStackMethod() {
         stack.push(2)
         stack.push(3)
         stack.clearStack()
@@ -56,14 +67,20 @@ final class NXStack_Test: XCTestCase {
         XCTAssertEqual(stack.peek(atIndex: 0), 4)
     }
     
-    func testMoveMethods() {
+    func testMoveMethod() {
         stack.push(4)
         stack.push(2)
         stack.push(5)
         stack.move(element: 2, atIndex: 0)
         XCTAssertEqual(stack.peek(atIndex: 0), 2)
+    }
+    
+    func testMoveAtIndexMethod() {
+        stack.push(4)
+        stack.push(2)
+        stack.push(5)
         stack.move(elementAtIndex: 0, atIndex: 2)
-        XCTAssertEqual(stack.peek(atIndex: 2), 2)
+        XCTAssertEqual(stack.peek(atIndex: 2), 4)
     }
     
     func testIndexOfElementMethod() {

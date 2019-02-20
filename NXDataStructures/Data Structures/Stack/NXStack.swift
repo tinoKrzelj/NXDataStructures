@@ -9,7 +9,6 @@
 import Foundation
 
 public struct NXStack<T: Comparable> {
-    
     //
     //  MARK: Properties
     //
