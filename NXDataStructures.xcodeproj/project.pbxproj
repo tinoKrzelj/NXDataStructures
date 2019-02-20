@@ -10,6 +10,8 @@
 		EF0B4AD62217162F009A57D7 /* NXLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0B4AD52217162F009A57D7 /* NXLinkedList.swift */; };
 		EF399BD1218343B100983D4D /* NXDataStructures.h in Headers */ = {isa = PBXBuildFile; fileRef = EF399BCF218343B100983D4D /* NXDataStructures.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EF399BDB218343E700983D4D /* NXStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF399BDA218343E700983D4D /* NXStack.swift */; };
+		EF45CC38221DD01D00D995C6 /* NXQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF45CC37221DD01D00D995C6 /* NXQueue.swift */; };
+		EF45CC3B221DD03300D995C6 /* NXQueue+Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF45CC3A221DD03300D995C6 /* NXQueue+Test.swift */; };
 		EF913678221C437A009C84BD /* NXLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF913677221C437A009C84BD /* NXLog.swift */; };
 		EF91367B221C5348009C84BD /* NXLinkedList+Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF91367A221C5348009C84BD /* NXLinkedList+Test.swift */; };
 		EF91367D221C55CD009C84BD /* NXLinkedListNode+Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF91367C221C55CD009C84BD /* NXLinkedListNode+Test.swift */; };
@@ -34,6 +36,8 @@
 		EF399BCF218343B100983D4D /* NXDataStructures.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NXDataStructures.h; sourceTree = "<group>"; };
 		EF399BD0218343B100983D4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF399BDA218343E700983D4D /* NXStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NXStack.swift; sourceTree = "<group>"; };
+		EF45CC37221DD01D00D995C6 /* NXQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NXQueue.swift; sourceTree = "<group>"; };
+		EF45CC3A221DD03300D995C6 /* NXQueue+Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NXQueue+Test.swift"; sourceTree = "<group>"; };
 		EF913677221C437A009C84BD /* NXLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NXLog.swift; sourceTree = "<group>"; };
 		EF91367A221C5348009C84BD /* NXLinkedList+Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NXLinkedList+Test.swift"; sourceTree = "<group>"; };
 		EF91367C221C55CD009C84BD /* NXLinkedListNode+Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NXLinkedListNode+Test.swift"; sourceTree = "<group>"; };
@@ -114,6 +118,7 @@
 			children = (
 				EF399BD9218343CC00983D4D /* Stack */,
 				EF0B4AD42217160E009A57D7 /* LinkedList */,
+				EF45CC36221DD00A00D995C6 /* Queue */,
 			);
 			path = "Data Structures";
 			sourceTree = "<group>";
@@ -124,6 +129,30 @@
 				EF399BDA218343E700983D4D /* NXStack.swift */,
 			);
 			path = Stack;
+			sourceTree = "<group>";
+		};
+		EF45CC36221DD00A00D995C6 /* Queue */ = {
+			isa = PBXGroup;
+			children = (
+				EF45CC37221DD01D00D995C6 /* NXQueue.swift */,
+			);
+			path = Queue;
+			sourceTree = "<group>";
+		};
+		EF45CC39221DD02200D995C6 /* Queue */ = {
+			isa = PBXGroup;
+			children = (
+				EF45CC3A221DD03300D995C6 /* NXQueue+Test.swift */,
+			);
+			path = Queue;
+			sourceTree = "<group>";
+		};
+		EF45CC3C221DD06D00D995C6 /* Node */ = {
+			isa = PBXGroup;
+			children = (
+				EF91367C221C55CD009C84BD /* NXLinkedListNode+Test.swift */,
+			);
+			path = Node;
 			sourceTree = "<group>";
 		};
 		EF913675221C4326009C84BD /* Resources */ = {
@@ -157,6 +186,7 @@
 			children = (
 				EFE84644221B0D4A00027A7A /* Stack */,
 				EFE84649221B13E500027A7A /* LinkedList */,
+				EF45CC39221DD02200D995C6 /* Queue */,
 			);
 			path = DataStructures;
 			sourceTree = "<group>";
@@ -180,7 +210,7 @@
 		EFE84649221B13E500027A7A /* LinkedList */ = {
 			isa = PBXGroup;
 			children = (
-				EF91367C221C55CD009C84BD /* NXLinkedListNode+Test.swift */,
+				EF45CC3C221DD06D00D995C6 /* Node */,
 				EF91367A221C5348009C84BD /* NXLinkedList+Test.swift */,
 			);
 			path = LinkedList;
@@ -297,6 +327,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF0B4AD62217162F009A57D7 /* NXLinkedList.swift in Sources */,
+				EF45CC38221DD01D00D995C6 /* NXQueue.swift in Sources */,
 				EFE8464B221B14BE00027A7A /* NXLinkedListNode.swift in Sources */,
 				EF913678221C437A009C84BD /* NXLog.swift in Sources */,
 				EF399BDB218343E700983D4D /* NXStack.swift in Sources */,
@@ -310,6 +341,7 @@
 				EF91367B221C5348009C84BD /* NXLinkedList+Test.swift in Sources */,
 				EF91367D221C55CD009C84BD /* NXLinkedListNode+Test.swift in Sources */,
 				EFE84647221B0D6B00027A7A /* NXStack+Test.swift in Sources */,
+				EF45CC3B221DD03300D995C6 /* NXQueue+Test.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
