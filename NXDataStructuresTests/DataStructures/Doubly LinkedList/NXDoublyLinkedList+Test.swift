@@ -114,5 +114,19 @@ class NXDoublyLinkedList_Test: XCTestCase {
         XCTAssertEqual(searchNode2.previousNode?.associatedValue, nil)
     }
     
+    func testPeekFirst() {
+        doublyLinkedList.addNodeAtBegining(withValue: 2)
+        doublyLinkedList.addNodeAtBegining(withValue: 3)
+        doublyLinkedList.addNodeAtBegining(withValue: 4)
+        XCTAssertEqual(doublyLinkedList.peekFirst()?.associatedValue, 4)
+    }
+    
+    func testPeekLast() {
+        doublyLinkedList.addNodeAtBegining(withValue: 2)
+        doublyLinkedList.addNodeAtBegining(withValue: 3)
+        doublyLinkedList.addNodeAtBegining(withValue: 4)
+        XCTAssertEqual(doublyLinkedList.peekLast()?.associatedValue, 2)
+    }
+    
 }
 

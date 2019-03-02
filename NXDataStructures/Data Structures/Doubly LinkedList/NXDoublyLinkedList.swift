@@ -179,4 +179,14 @@ public struct NXDoublyLinkedList<T> {
         node.previousNode = node.previousNode?.previousNode
         return currentPrevious
     }
+    
+    /// Will peek at first node in doubly linked list
+    public mutating func peekFirst() -> NXDoublyLinkedListNode<T>? {
+        return head
+    }
+    
+    /// Will peek at last node in doubly linked list
+    public mutating func peekLast() -> NXDoublyLinkedListNode<T>? {
+        return tail
+    }
 }

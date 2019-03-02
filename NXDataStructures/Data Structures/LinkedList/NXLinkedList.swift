@@ -131,4 +131,14 @@ public struct NXLinkedList<T> {
         return currentLast
     }
     
+    /// Will peek at first node in linked list
+    public mutating func peekFirst() -> NXLinkedListNode<T>? {
+        return head
+    }
+    
+    /// Will peek at last node in linked list
+    public mutating func peekLast() -> NXLinkedListNode<T>? {
+        return tail
+    }
+    
 }

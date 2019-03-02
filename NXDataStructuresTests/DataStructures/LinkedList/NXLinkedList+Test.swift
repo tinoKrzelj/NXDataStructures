@@ -71,4 +71,19 @@ class NXLinkedList_Test: XCTestCase {
         XCTAssertEqual(linkedList.removeAfter(node: searchNode)?.associatedValue, 3)
     }
     
+    func testPeekFirst() {
+        linkedList.addNodeAtBegining(withValue: 2)
+        linkedList.addNodeAtBegining(withValue: 3)
+        linkedList.addNodeAtBegining(withValue: 4)
+        XCTAssertEqual(linkedList.peekFirst()?.associatedValue, 4)
+    }
+    
+    func testPeekLast() {
+        linkedList.addNodeAtBegining(withValue: 2)
+        linkedList.addNodeAtBegining(withValue: 3)
+        linkedList.addNodeAtBegining(withValue: 4)
+        XCTAssertEqual(linkedList.peekLast()?.associatedValue, 2)
+    }
+    
+    
 }
