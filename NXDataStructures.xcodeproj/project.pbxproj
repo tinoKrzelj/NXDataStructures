@@ -12,6 +12,10 @@
 		EF399BDB218343E700983D4D /* NXStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF399BDA218343E700983D4D /* NXStack.swift */; };
 		EF45CC38221DD01D00D995C6 /* NXQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF45CC37221DD01D00D995C6 /* NXQueue.swift */; };
 		EF45CC3B221DD03300D995C6 /* NXQueue+Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF45CC3A221DD03300D995C6 /* NXQueue+Test.swift */; };
+		EF8196DA22247AF70098AFE6 /* NXDoublyLinkedListNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8196D922247AF70098AFE6 /* NXDoublyLinkedListNode.swift */; };
+		EF8196DD22247BC90098AFE6 /* NXDoublyLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8196DC22247BC90098AFE6 /* NXDoublyLinkedList.swift */; };
+		EF8196DF22247CDC0098AFE6 /* NXDoublyLinkedListNode+Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8196DE22247CDC0098AFE6 /* NXDoublyLinkedListNode+Test.swift */; };
+		EF8196E122247CE70098AFE6 /* NXDoublyLinkedList+Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8196E022247CE70098AFE6 /* NXDoublyLinkedList+Test.swift */; };
 		EF913678221C437A009C84BD /* NXLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF913677221C437A009C84BD /* NXLog.swift */; };
 		EF91367B221C5348009C84BD /* NXLinkedList+Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF91367A221C5348009C84BD /* NXLinkedList+Test.swift */; };
 		EF91367D221C55CD009C84BD /* NXLinkedListNode+Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF91367C221C55CD009C84BD /* NXLinkedListNode+Test.swift */; };
@@ -38,6 +42,10 @@
 		EF399BDA218343E700983D4D /* NXStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NXStack.swift; sourceTree = "<group>"; };
 		EF45CC37221DD01D00D995C6 /* NXQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NXQueue.swift; sourceTree = "<group>"; };
 		EF45CC3A221DD03300D995C6 /* NXQueue+Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NXQueue+Test.swift"; sourceTree = "<group>"; };
+		EF8196D922247AF70098AFE6 /* NXDoublyLinkedListNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NXDoublyLinkedListNode.swift; sourceTree = "<group>"; };
+		EF8196DC22247BC90098AFE6 /* NXDoublyLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NXDoublyLinkedList.swift; sourceTree = "<group>"; };
+		EF8196DE22247CDC0098AFE6 /* NXDoublyLinkedListNode+Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NXDoublyLinkedListNode+Test.swift"; sourceTree = "<group>"; };
+		EF8196E022247CE70098AFE6 /* NXDoublyLinkedList+Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NXDoublyLinkedList+Test.swift"; sourceTree = "<group>"; };
 		EF913677221C437A009C84BD /* NXLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NXLog.swift; sourceTree = "<group>"; };
 		EF91367A221C5348009C84BD /* NXLinkedList+Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NXLinkedList+Test.swift"; sourceTree = "<group>"; };
 		EF91367C221C55CD009C84BD /* NXLinkedListNode+Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NXLinkedListNode+Test.swift"; sourceTree = "<group>"; };
@@ -118,6 +126,7 @@
 			children = (
 				EF399BD9218343CC00983D4D /* Stack */,
 				EF0B4AD42217160E009A57D7 /* LinkedList */,
+				EF8E5900221DD44E000D03A9 /* Doubly LinkedList */,
 				EF45CC36221DD00A00D995C6 /* Queue */,
 			);
 			path = "Data Structures";
@@ -155,6 +164,40 @@
 			path = Node;
 			sourceTree = "<group>";
 		};
+		EF8196D822247AD10098AFE6 /* Node */ = {
+			isa = PBXGroup;
+			children = (
+				EF8196D922247AF70098AFE6 /* NXDoublyLinkedListNode.swift */,
+			);
+			path = Node;
+			sourceTree = "<group>";
+		};
+		EF8196DB22247B540098AFE6 /* Node */ = {
+			isa = PBXGroup;
+			children = (
+				EF8196DE22247CDC0098AFE6 /* NXDoublyLinkedListNode+Test.swift */,
+			);
+			path = Node;
+			sourceTree = "<group>";
+		};
+		EF8E5900221DD44E000D03A9 /* Doubly LinkedList */ = {
+			isa = PBXGroup;
+			children = (
+				EF8196D822247AD10098AFE6 /* Node */,
+				EF8196DC22247BC90098AFE6 /* NXDoublyLinkedList.swift */,
+			);
+			path = "Doubly LinkedList";
+			sourceTree = "<group>";
+		};
+		EF8E5901221DD465000D03A9 /* Doubly LinkedList */ = {
+			isa = PBXGroup;
+			children = (
+				EF8196DB22247B540098AFE6 /* Node */,
+				EF8196E022247CE70098AFE6 /* NXDoublyLinkedList+Test.swift */,
+			);
+			path = "Doubly LinkedList";
+			sourceTree = "<group>";
+		};
 		EF913675221C4326009C84BD /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -186,6 +229,7 @@
 			children = (
 				EFE84644221B0D4A00027A7A /* Stack */,
 				EFE84649221B13E500027A7A /* LinkedList */,
+				EF8E5901221DD465000D03A9 /* Doubly LinkedList */,
 				EF45CC39221DD02200D995C6 /* Queue */,
 			);
 			path = DataStructures;
@@ -327,8 +371,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF0B4AD62217162F009A57D7 /* NXLinkedList.swift in Sources */,
+				EF8196DD22247BC90098AFE6 /* NXDoublyLinkedList.swift in Sources */,
 				EF45CC38221DD01D00D995C6 /* NXQueue.swift in Sources */,
 				EFE8464B221B14BE00027A7A /* NXLinkedListNode.swift in Sources */,
+				EF8196DA22247AF70098AFE6 /* NXDoublyLinkedListNode.swift in Sources */,
 				EF913678221C437A009C84BD /* NXLog.swift in Sources */,
 				EF399BDB218343E700983D4D /* NXStack.swift in Sources */,
 			);
@@ -342,6 +388,8 @@
 				EF91367D221C55CD009C84BD /* NXLinkedListNode+Test.swift in Sources */,
 				EFE84647221B0D6B00027A7A /* NXStack+Test.swift in Sources */,
 				EF45CC3B221DD03300D995C6 /* NXQueue+Test.swift in Sources */,
+				EF8196DF22247CDC0098AFE6 /* NXDoublyLinkedListNode+Test.swift in Sources */,
+				EF8196E122247CE70098AFE6 /* NXDoublyLinkedList+Test.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -20,5 +20,5 @@ class NXQueue_Test: XCTestCase {
     //
     // MARK: Custom Methods
     //
-
-}
+  
+}

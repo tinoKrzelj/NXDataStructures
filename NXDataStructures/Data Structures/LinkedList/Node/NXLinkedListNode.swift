@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class NXLinkedListNode<T> {
+public final class NXLinkedListNode<T> {
     //
     // MARK: Properties
     //
