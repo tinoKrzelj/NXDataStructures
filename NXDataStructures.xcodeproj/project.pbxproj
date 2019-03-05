@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		EF0B4AD62217162F009A57D7 /* NXLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0B4AD52217162F009A57D7 /* NXLinkedList.swift */; };
+		EF0F3FA4222BDCEA0098A5B1 /* NXTreeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0F3FA3222BDCEA0098A5B1 /* NXTreeNode.swift */; };
+		EF0F3FA6222BF05C0098A5B1 /* NXTreeNode+Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0F3FA5222BF05C0098A5B1 /* NXTreeNode+Test.swift */; };
+		EF0F3FA8222BF7640098A5B1 /* NXTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0F3FA7222BF7640098A5B1 /* NXTree.swift */; };
+		EF0F3FAA222BF8A40098A5B1 /* NXTree+Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0F3FA9222BF8A40098A5B1 /* NXTree+Test.swift */; };
 		EF399BD1218343B100983D4D /* NXDataStructures.h in Headers */ = {isa = PBXBuildFile; fileRef = EF399BCF218343B100983D4D /* NXDataStructures.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EF399BDB218343E700983D4D /* NXStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF399BDA218343E700983D4D /* NXStack.swift */; };
 		EF45CC38221DD01D00D995C6 /* NXQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF45CC37221DD01D00D995C6 /* NXQueue.swift */; };
@@ -36,6 +40,10 @@
 
 /* Begin PBXFileReference section */
 		EF0B4AD52217162F009A57D7 /* NXLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NXLinkedList.swift; sourceTree = "<group>"; };
+		EF0F3FA3222BDCEA0098A5B1 /* NXTreeNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NXTreeNode.swift; sourceTree = "<group>"; };
+		EF0F3FA5222BF05C0098A5B1 /* NXTreeNode+Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NXTreeNode+Test.swift"; sourceTree = "<group>"; };
+		EF0F3FA7222BF7640098A5B1 /* NXTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NXTree.swift; sourceTree = "<group>"; };
+		EF0F3FA9222BF8A40098A5B1 /* NXTree+Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NXTree+Test.swift"; sourceTree = "<group>"; };
 		EF399BCC218343B100983D4D /* NXDataStructures.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NXDataStructures.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF399BCF218343B100983D4D /* NXDataStructures.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NXDataStructures.h; sourceTree = "<group>"; };
 		EF399BD0218343B100983D4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -84,6 +92,40 @@
 			path = LinkedList;
 			sourceTree = "<group>";
 		};
+		EF0F3F9D222BDB970098A5B1 /* Tree */ = {
+			isa = PBXGroup;
+			children = (
+				EF0F3F9F222BDCCA0098A5B1 /* Node */,
+				EF0F3FA7222BF7640098A5B1 /* NXTree.swift */,
+			);
+			path = Tree;
+			sourceTree = "<group>";
+		};
+		EF0F3F9E222BDCAB0098A5B1 /* Tree */ = {
+			isa = PBXGroup;
+			children = (
+				EF0F3FA0222BDCCE0098A5B1 /* Node */,
+				EF0F3FA9222BF8A40098A5B1 /* NXTree+Test.swift */,
+			);
+			path = Tree;
+			sourceTree = "<group>";
+		};
+		EF0F3F9F222BDCCA0098A5B1 /* Node */ = {
+			isa = PBXGroup;
+			children = (
+				EF0F3FA3222BDCEA0098A5B1 /* NXTreeNode.swift */,
+			);
+			path = Node;
+			sourceTree = "<group>";
+		};
+		EF0F3FA0222BDCCE0098A5B1 /* Node */ = {
+			isa = PBXGroup;
+			children = (
+				EF0F3FA5222BF05C0098A5B1 /* NXTreeNode+Test.swift */,
+			);
+			path = Node;
+			sourceTree = "<group>";
+		};
 		EF399BC2218343B100983D4D = {
 			isa = PBXGroup;
 			children = (
@@ -128,6 +170,7 @@
 				EF0B4AD42217160E009A57D7 /* LinkedList */,
 				EF8E5900221DD44E000D03A9 /* Doubly LinkedList */,
 				EF45CC36221DD00A00D995C6 /* Queue */,
+				EF0F3F9D222BDB970098A5B1 /* Tree */,
 			);
 			path = "Data Structures";
 			sourceTree = "<group>";
@@ -231,6 +274,7 @@
 				EFE84649221B13E500027A7A /* LinkedList */,
 				EF8E5901221DD465000D03A9 /* Doubly LinkedList */,
 				EF45CC39221DD02200D995C6 /* Queue */,
+				EF0F3F9E222BDCAB0098A5B1 /* Tree */,
 			);
 			path = DataStructures;
 			sourceTree = "<group>";
@@ -377,6 +421,8 @@
 				EF8196DA22247AF70098AFE6 /* NXDoublyLinkedListNode.swift in Sources */,
 				EF913678221C437A009C84BD /* NXLog.swift in Sources */,
 				EF399BDB218343E700983D4D /* NXStack.swift in Sources */,
+				EF0F3FA4222BDCEA0098A5B1 /* NXTreeNode.swift in Sources */,
+				EF0F3FA8222BF7640098A5B1 /* NXTree.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,6 +434,8 @@
 				EF91367D221C55CD009C84BD /* NXLinkedListNode+Test.swift in Sources */,
 				EFE84647221B0D6B00027A7A /* NXStack+Test.swift in Sources */,
 				EF45CC3B221DD03300D995C6 /* NXQueue+Test.swift in Sources */,
+				EF0F3FA6222BF05C0098A5B1 /* NXTreeNode+Test.swift in Sources */,
+				EF0F3FAA222BF8A40098A5B1 /* NXTree+Test.swift in Sources */,
 				EF8196DF22247CDC0098AFE6 /* NXDoublyLinkedListNode+Test.swift in Sources */,
 				EF8196E122247CE70098AFE6 /* NXDoublyLinkedList+Test.swift in Sources */,
 			);

@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class NXDoublyLinkedListNode<T> {
+public final class NXDoublyLinkedListNode<T> {
     //
     // MARK: Properties
     //

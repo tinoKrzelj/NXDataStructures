@@ -14,7 +14,7 @@ class NXQueue_Test: XCTestCase {
     // MARK: Properties
     //
     
-    var queue = NXQueue<Int>()
+    private var queue = NXQueue<Int>()
 
     //
     // MARK: Custom Methods
